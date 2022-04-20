@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/milogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Poppins:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ef6a4e4a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/estilos.css">
+    <title>Portafolio-JuanDiegoGarcia</title>
+</head>
+<body>
+
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Juan Diego García Albornoz</h1>  <!--colocar el logo-->
+                <div class="logo-jd">
+                    <img src="img/milogo.png">
+                </div>
+                <p>Desarrollador Web Junior</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar...">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Inicio</a>
+                <a href="#">Frontend</a>
+                <a href="#">Backend</a>
+                <a href="#">Diseño</a>
+                <a href="#">Bases de Datos</a>
+                <a href="#">Control de Versiones</a>
+
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+             data-categoria="frontend" 
+             data-etiquetas="html5 lenguaje etiqueta web frontend"
+             data-descripcion="Tengo muy buenos conocimientos en HTML5, he trabajado con este lenguaje de estructuración por alrededor de 1 año y tengo las capacidades suficientes para ejercer un trabajo que involucre trabajar con este. "
+            >
+                <div class="item-contenido">
+                    <img src="img/html-5.png" alt="logo-html5">
+                </div>
+            </div>
+            
+            <div class="item" 
+             data-categoria="frontend" 
+             data-etiquetas="css3 lenguaje cascada web frontend"
+             data-descripcion="Tengo excelentes conocimientos en CSS3, con este lenguaje de diseño he trabajado alrededor de 1 año, manejo un buen nivel de diseño web trabajando con diseños responsive y tengo muy buenas capacidades para ejercer un trabajo que involucre trabajar con CSS3 "
+            >
+                <div class="item-contenido">
+                    <img src="img/css-3.png" alt="logo-CSS3">
+                </div>
+            </div>
+            
+            <div class="item" 
+             data-categoria="frontend" 
+             data-etiquetas="js lenguaje programación javaScript java web frontend"
+             data-descripcion="experiencia en js"
+            >
+                <div class="item-contenido">
+                    <img src="img/js.png" alt="logo-js">
+                </div>
+            </div>
+
+            <div class="item" 
+             data-categoria="backend" 
+             data-etiquetas="php lenguaje programación web backend"
+             data-descripcion="experiencia en php"
+            >
+                <div class="item-contenido">
+                    <img src="img/php.png" alt="logo-php">
+                </div>
+            </div>
+            
+            <div class="item" 
+             data-categoria="bases de datos" 
+             data-etiquetas="basesdedatos sql server backend datos"
+             data-descripcion="experiencia en sql server"
+            >
+                <div class="item-contenido">
+                    <img src="img/sql-server.png" alt="logo-sqlserver">
+                </div>
+            </div>
+
+            <div class="item" 
+             data-categoria="bases de datos" 
+             data-etiquetas="basesdedatos mysql backend datos"
+             data-descripcion="experiencia en mysql"
+            >
+                <div class="item-contenido">
+                    <img src="img/mysql.png" alt="logo-mysql">
+                </div>
+            </div>
+
+            
+            <div class="item" 
+             data-categoria="control de versiones"
+             data-etiquetas="git github control versiones  "
+             data-descripcion="experiencia en git"
+            >
+                <div class="item-contenido">
+                    <img src="img/github.png" alt="logo-hithub">
+                </div>
+            </div>
+
+            <div class="item" 
+             data-categoria="diseño" 
+             data-etiquetas="diseño grafico edicion "
+             data-descripcion="experiencia en photoshop"
+            >
+                <div class="item-contenido">
+                    <img src="img/photoshop.png" alt="logo-ps">
+                </div>
+            </div>
+
+            <div class="item" 
+             data-categoria="diseño" 
+             data-etiquetas="diseño grafico edicion vectorizacion dibujo"
+             data-descripcion="experiencia en AI"
+            >
+                <div class="item-contenido">
+                    <img src="img/illustrator.png" alt="logo-AI">
+                </div>
+            </div>
+
+            
+            <div class="item" 
+             data-categoria="diseño" 
+             data-etiquetas="diseño grafico edicion video "
+             data-descripcion="experiencia en video"
+            >
+                <div class="item-contenido">
+                    <img src="img/premiere-pro.png" alt="logo-pr">
+                </div>
+            </div>
+
+            <div class="item" 
+             data-categoria="diseño" 
+             data-etiquetas="diseño grafico mockups prototipos maquetación "
+             data-descripcion="experiencia en xD"
+            >
+                <div class="item-contenido">
+                    <img src="img/xd.png" alt="logo-xd">
+                </div>
+            </div>
+            
+            <div class="item" 
+             data-categoria="diseño" 
+             data-etiquetas="diseño grafico modelado 3d 3D animacion blender"
+             data-descripcion="experiencia en blender"
+            >
+                <div class="item-contenido">
+                    <img src="img/Logo-de-Blender.png" alt="logo-blender">
+                </div>
+            </div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="btn-cerrar-popup"><i class="fa-solid fa-circle-xmark"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <main class="sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>¡Hola! Soy desarrollador web Full Stack y apasionado del Front-End, amante a los diseños minimalistas simples y modernos. Soy una persona autodidacta y siempre que puedo intento aprender nuevas tecnologías.<br>
+                Actualmente me encuentro en la etapa final de mi carrera universitaria, y durante estos últimos años he desarrollado proyectos los cuales me han ayudado a profundizar mis conocimientos. Estoy buscando formar parte de un proyecto que me permita dejar mi marca en la web y me haga crecer profesionalmente.   
+            </p>
+            <div class="cv">
+                <a href="hoja de vida.pdf" class="btn-cv" download="CV-JuanDiegoGarcia" title="Descargar CV">
+                    <i class="fa-solid fa-file-pdf"></i>Descargar CV
+                </a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="redes-sociales">
+            <div class="contenedor-icono">
+                <a href="https://www.linkedin.com/in/juan-diego-garcia-albornoz-436344213/" target="_blank" class="linkedln">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://www.facebook.com/Diego.Garcia.Dj.ArkAnEy/" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://www.instagram.com/__diego_garcia_/" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="contenedor-icono">
+                <a href="https://wa.me/573204894873?text=¡Hola!%20estuve%20viendo%20tu%20portafolio%20y%20quiero%20saber%20más%20de%20ti" class="whatsapp" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="creado-por">
+            <p>Sitio diseñado por <b>Juan Diego Garcia</b></p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
